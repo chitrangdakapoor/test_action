@@ -1,0 +1,20 @@
+---
+name: get_device_os
+pack: dd_network
+runner_type: "python-script"
+description: "Gets device os of a cisco device"
+enabled: true
+entry_point: get_device_os.py
+parameters:
+    host:
+        type: string
+        description: "Target host to login"
+        required: true
+    username:
+        type: string
+        description: "username"
+        required: true
+    password:
+        type: string
+        description: "password"
+        required: true
